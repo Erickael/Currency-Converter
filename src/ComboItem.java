@@ -1,4 +1,4 @@
-//setting combo's items into the "key  -  value" form
+//setting combo's items to take the "key  -  value" form
 public class ComboItem {
 	String key, value;
 

@@ -85,6 +85,7 @@ public class CurrencyList {
 			+ "    \"USD\": \"Dollar américain\",\r\n" + "    \"XPF\": \"Franc CFP\",\r\n"
 			+ "    \"XOF\": \"Franc CFA ouest-africaine\"\r\n" + "}\r\n" + "";
 
+	// map for comboboxes
 	Map<String, String> map = new TreeMap<String, String>();
 
 	JSONObject json = new JSONObject(currency);

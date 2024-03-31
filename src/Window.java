@@ -37,6 +37,17 @@ public class Window extends JFrame {
 		panel1 = new JPanel();
 		panel2 = new JPanel();
 
+		// Action listener: Combo
+		combo1.addActionListener(e -> {
+			ComboItem item = (ComboItem) combo1.getSelectedItem();
+			System.out.println(item.key);
+		});
+
+		combo2.addActionListener(e -> {
+			ComboItem item = (ComboItem) combo2.getSelectedItem();
+			System.out.println(item.key);
+		});
+
 		// adding comboboxes and fields into panels
 		panel1.add(combo1);
 		panel1.add(field1);
