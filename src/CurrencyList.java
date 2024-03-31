@@ -1,5 +1,10 @@
+//JSON created from Cambio.today's currency list
 
-//JSON from Cambio.today's currency list
+import java.util.Map;
+import java.util.TreeMap;
+
+import org.json.JSONObject;
+
 public class CurrencyList {
 
 	String currency = "{\r\n" + "    \"AUD\": \"Dollar australien\",\r\n" + "    \"ARS\": \"Peso argentin\",\r\n"
@@ -79,4 +84,16 @@ public class CurrencyList {
 			+ "    \"SHP\": \"Saint Helena livre\",\r\n" + "    \"TZS\": \"Shilling tanzanien\",\r\n"
 			+ "    \"USD\": \"Dollar américain\",\r\n" + "    \"XPF\": \"Franc CFP\",\r\n"
 			+ "    \"XOF\": \"Franc CFA ouest-africaine\"\r\n" + "}\r\n" + "";
+
+	Map<String, String> map = new TreeMap<String, String>();
+
+	JSONObject json = new JSONObject(currency);
+
+	{
+		// Filling the map using the JsonObject
+		for (String key : json.keySet()) {
+			map.put(key, json.getString(key));
+
+		}
+	}
 }
