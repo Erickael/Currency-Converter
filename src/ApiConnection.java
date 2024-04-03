@@ -33,6 +33,7 @@ public class ApiConnection {
 			}
 
 			reader.close();
+			System.out.println(response);
 
 			JSONObject json = new JSONObject(response);
 			Double converted = json.getJSONObject("result").getDouble("amount");
