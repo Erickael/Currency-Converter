@@ -9,7 +9,7 @@ import org.json.JSONObject;
 
 public class ApiConnection {
 	private static final String link = "https://api.devises.zone/v1/quotes/";
-	private static final String key = "48371|rF5amsuab2TG1srcih3w";
+	private static final String key = "YOUR KEY";
 
 	// N.B: use your key instead of this pls :')
 	public double convert(String from, String to, int amount) {
